@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS with Ant Design
 
-## Getting Started
+## What's included
 
-First, run the development server:
+- Nextjs v10+ with CSS module built-in, [.env built-int](https://nextjs.org/docs/basic-features/environment-variables)
+- Ant Design v
+- Typescript
+- ESLint with Semistandard coding style and Typescript support
+- Prettier
 
-```bash
-npm run dev
-# or
-yarn dev
+## Other setup
+
+- Disable telemetry by default by setting `NEXT_TELEMETRY_DEBUG=1` (https://nextjs.org/telemetry)
+- Preconfigure `paths` for module alias. Must be done in both `tsconfig.json` and `next.config.js`
+
+```ts
+// DON'T
+import { Card } from '../components/Card';
+
+// DO
+import { Card } from '@components/Card';
+
+- Example `Card` component to demonstrate how to organize view, css and file naming properly. Using `index.ts` to export component so that we don't need to specify long import statement. Also useful when grouping similar components
+
+```ts
+// DON'T
+import Card from '@components/Card/card.component.tsx';
+
+// DO
+import { Card } from '@components/Card';
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Included npm script to run linter
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+# OR
+npm run lint:fix
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Local development
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Copy `.env.example` to `.env` and edit variables accordingly
 
-## Learn More
+```bash
+cp .env.local.example .env.local
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install node modules and start development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. To start server in production mode, run:
 
-## Deploy on Vercel
+```bash
+npm run build
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This template does not include custom server.
+Vercel.com is the best way to deploy it with almost no configuration.
