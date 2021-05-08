@@ -10,7 +10,6 @@
     "lint:fix": "eslint ./src --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@ant-design/pro-layout": "^6.17.1",
     "antd": "^4.15.4",
     "next": "10.2.0",
     "react": "17.0.2",
