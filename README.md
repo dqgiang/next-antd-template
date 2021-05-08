@@ -19,6 +19,7 @@ import { Card } from '../components/Card';
 
 // DO
 import { Card } from '@components/Card';
+```
 
 - Example `Card` component to demonstrate how to organize view, css and file naming properly. Using `index.ts` to export component so that we don't need to specify long import statement. Also useful when grouping similar components
 
