@@ -1,9 +1,12 @@
 # NextJS with Ant Design
 
+Source code: https://github.com/dqgiang/next-antd-template
+Live demo: https://next-antd-template.vercel.app/
+
 ## What's included
 
 - Nextjs v10+ with CSS module built-in, [.env built-int](https://nextjs.org/docs/basic-features/environment-variables)
-- Ant Design v4.15+, customizable with less, using config helper module (https://www.npmjs.com/package/next-plugin-antd-less)
+- Ant Design v4.15+, customizable with less, support hot reload using config helper module (https://www.npmjs.com/package/next-plugin-antd-less)
 - Typescript
 - ESLint with Semistandard coding style and Typescript support
 - Prettier
