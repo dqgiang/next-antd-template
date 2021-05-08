@@ -20,7 +20,7 @@ export default function Home() {
           <a href="https://ant.design/">Ant Design</a>
         </h1>
 
-        <p className={styles.description}>Select you app below</p>
+        <p className={styles.description}>Select your app below</p>
         <Card style={{ width: '60%' }}>
           <ol>
             <li style={{ display: 'flex', flexDirection: 'row', marginTop: '2rem' }}>
