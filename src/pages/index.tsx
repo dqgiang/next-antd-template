@@ -57,7 +57,12 @@ export default function Home() {
         </Card>
       </main>
 
-      <footer className={styles.footer}>Powered by Platformerie</footer>
+      <footer className={styles.footer}>
+        <p>Template by Platformerie</p>
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+          Powered by <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+        </a>
+      </footer>
     </div>
   );
 }
