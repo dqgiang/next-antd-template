@@ -1,7 +1,6 @@
 # NextJS with Ant Design
 
-Source code: https://github.com/dqgiang/next-antd-template
-Live demo: https://next-antd-template.vercel.app/
+[Source code](https://github.com/dqgiang/next-antd-template) | [Live demo](https://next-antd-template.vercel.app)
 
 ## What's included
 
