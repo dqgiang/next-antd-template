@@ -4,8 +4,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -16,3 +16,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.ant-btn-primary {
+  &:hover {
+    background-color: @primary-7 !important;
+  }
+  &:active {
+    background-color: @primary-9 !important;
+  }
+}
+
+// .ant-btn {
+//   &:hover {
+//     background-color: red !important;
+//   }
+// }

@@ -1,5 +1,7 @@
 import React from 'react';
 import { AppProps } from 'next/app';
+import '../styles/antd.min.css';
+import '../styles/layout.min.css';
 require('../styles/globals.less');
 
 function MyApp({ Component, pageProps }: AppProps) {

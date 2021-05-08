@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 
 import { Card } from '@components/card';
 import Link from 'next/link';
@@ -18,7 +17,7 @@ export default function AppHome() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to your APP-1</h1>
+        <h1 className={styles.title}>Welcome to your APP-2</h1>
 
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/app-1/index.js</code>

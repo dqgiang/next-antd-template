@@ -64,3 +64,10 @@ npm run start
 
 This template does not include custom server.
 Vercel.com is the best way to deploy it with almost no configuration.
+
+## Known issues
+
+1. Have to import pro-layout component using `dynamic`. Otherwise, cannot build due to NextJS does not support import CSS in `node_modules`
+2. Also due to that, have to copy all `antd.min.css` and `layout.min.css` to `styles` folder and import in `_app.tsx`. If not do so, the production build will not have correct styles.
+
+Ref: https://github.com/vercel/next.js/issues/9830#issuecomment-618163984

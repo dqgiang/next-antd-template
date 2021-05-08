@@ -1,0 +1,31 @@
+.footer {
+  margin: 48px 0;
+  padding: 0 16px;
+  text-align: center;
+  font-weight: 600;
+
+  /* 
+   * Must use :global for ant built-in classes
+   * The "footer" is the prefixCls of the component
+   */
+  :global {
+    .ant-footer-links a {
+      color: @text-color-secondary;
+      transition: all 0.3s;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        color: @text-color;
+      }
+    }
+
+    .ant-footer-copyright {
+      padding-top: 1rem;
+      text-align: center;
+      color: @disabled-color;
+    }
+  }
+}

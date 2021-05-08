@@ -7,7 +7,7 @@ const Dashboard = () => {
 
   return (
     <PageLayout {...props}>
-      <Card>Yo</Card>
+      <Card>This is index</Card>
     </PageLayout>
   );
 };

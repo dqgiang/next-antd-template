@@ -25,10 +25,10 @@ export default function Home() {
           <ol>
             <li style={{ display: 'flex', flexDirection: 'row', marginTop: '2rem' }}>
               <Typography.Title level={3} style={{ flexGrow: 1 }}>
-                App 1
+                App 2
               </Typography.Title>
               <Button type="default" size="large">
-                <Link href="/app-1">
+                <Link href="/app-2">
                   <a>View</a>
                 </Link>
               </Button>
