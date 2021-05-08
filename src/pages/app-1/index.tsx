@@ -23,13 +23,10 @@ export default function AppHome() {
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/app-1/index.js</code>
           <br />
-          <p>
-            Demonstrate public var is{' '}
-            <code
-              className={styles.code}
-            >{`NEXT_PUBLIC_VAR = ${process.env.NEXT_PUBLIC_VAR}`}</code>
-            declaring in <code className={styles.code}>.env</code>
-          </p>
+          <br />
+          Demonstrate public var is{' '}
+          <code className={styles.code}>{`NEXT_PUBLIC_VAR = ${process.env.NEXT_PUBLIC_VAR}`}</code>
+          declaring in <code className={styles.code}>.env</code>
         </p>
 
         <Button type="primary" size="large">
